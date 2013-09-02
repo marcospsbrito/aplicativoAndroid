@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -44,6 +47,8 @@ public class FullscreenActivity extends Activity {
      * The instance of the {@link SystemUiHider} for this activity.
      */
     private SystemUiHider mSystemUiHider;
+    private EditText login;
+    private EditText senha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,6 +117,17 @@ public class FullscreenActivity extends Activity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+        login = (EditText)findViewById(R.login.login);
+        senha = (EditText)findViewById(R.login.password);
+        findViewById(R.login.logar).setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				setContentView(R.layout.activity_logado);
+				((TextView)findViewById(R.id.textView1)).setText("Logado Login:"+login.getText().toString()+" Senha:"+senha.getText().toString());
+			}
+		});
+        
+        
     }
 
     @Override

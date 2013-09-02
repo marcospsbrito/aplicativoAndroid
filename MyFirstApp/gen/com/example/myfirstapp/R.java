@@ -28,14 +28,25 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int dummy_button=0x7f070002;
         public static final int fullscreen_content=0x7f070000;
         public static final int fullscreen_content_controls=0x7f070001;
+        public static final int textView1=0x7f070003;
     }
     public static final class layout {
         public static final int activity_fullscreen=0x7f030000;
+        public static final int activity_logado=0x7f030001;
+    }
+    public static final class login {
+        public static final int logar=0x7f080002;
+        public static final int login=0x7f080000;
+        public static final int password=0x7f080001;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
+        public static final int background_text=0x7f050004;
         public static final int dummy_button=0x7f050001;
         public static final int dummy_content=0x7f050002;
+        public static final int login=0x7f050005;
+        public static final int sair=0x7f050003;
+        public static final int texto_login=0x7f050006;
     }
     public static final class style {
         /** 
@@ -100,7 +111,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:buttonBarButtonStyle
+          @attr name com.example.myfirstapp:buttonBarButtonStyle
         */
         public static final int ButtonBarContainerTheme_buttonBarButtonStyle = 1;
         /**
@@ -110,7 +121,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:buttonBarStyle
+          @attr name com.example.myfirstapp:buttonBarStyle
         */
         public static final int ButtonBarContainerTheme_buttonBarStyle = 0;
     };
